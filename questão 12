@@ -1,0 +1,25 @@
+main(){
+
+  double HorasTrabalhadas, SalHora, SalFinal, HorasSem;
+
+ scanf("%lf %lf", &HorasTrabalhadas, &SalHora);
+
+ HorasSem = HorasTrabalhadas/ 4;
+
+  SalFinal = HorasTrabalhadas* SalHora;
+
+if (HorasSem <= 40) {
+
+ printf(SalFinal);
+
+  } else {
+
+ SalFinal = SalFinal + ((HorasSem - 40) * (SalHora * 1.5));
+
+  printf(SalFinal);  
+
+ }  
+
+ return 0;  
+
+}
